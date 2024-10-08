@@ -1,0 +1,163 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+}
+
+h1 {
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Input and Buttons */
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Superhero Display Section */
+#heroimage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#heroimage img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+#heroimage h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #007BFF;
+}
+
+#heroimage p {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Stats Styling */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+  padding: 0 20px;
+}
+
+.stats p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For devices with a width of 768px or smaller (tablets, small laptops) */
+@media (max-width: 768px) {
+  input[type="text"] {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  #heroimage {
+    padding: 20px;
+  }
+
+  #heroimage h2 {
+    font-size: 24px;
+  }
+
+  #heroimage p {
+    font-size: 16px;
+  }
+
+  .stats p {
+    font-size: 14px;
+  }
+}
+
+/* For devices with a width of 480px or smaller (mobile phones) */
+@media (max-width: 480px) {
+  input[type="text"] {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  #heroimage {
+    padding: 15px;
+  }
+
+  #heroimage h2 {
+    font-size: 20px;
+  }
+
+  #heroimage p {
+    font-size: 14px;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stats p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
